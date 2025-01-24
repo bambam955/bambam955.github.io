@@ -1,13 +1,8 @@
 name: Debug CI Variables
 
-on: 
-  push:
-    branches:
-      - main
-      - develop
-  pull_request:
-    branches:
-      - '*'
+# Run this workflow only when called by other workflows
+on:
+  workflow_call:
 
 jobs:
   debug-variables:

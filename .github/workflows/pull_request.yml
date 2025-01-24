@@ -1,0 +1,19 @@
+name: Pull Request Checks
+
+# Run this workflow on all PRs
+on:
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  debug_ci:
+    name: Debug CI Variables
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/workflows/debug-variables.yml
+  lint:
+    name: Run Linter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/workflows/eslint.yml

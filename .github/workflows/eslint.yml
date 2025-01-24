@@ -5,14 +5,9 @@
 
 name: ESLint
 
+# Run this workflow only when called by other workflows
 on:
-  push:
-    branches:
-      - main
-      - develop
-  pull_request:
-    branches:
-      - '*'
+  workflow_call:
 
 jobs:
   eslint:
