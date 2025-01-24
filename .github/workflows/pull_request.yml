@@ -8,18 +8,6 @@ on:
 
 jobs:
   debug_ci:
-    name: Debug CI Variables
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Debug variables
-        uses: ./.github/workflows/debug-variables.yml
+    uses: ./.github/workflows/debug-variables.yml
   lint:
-    name: Run Linter
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Run ESLint
-        uses: ./.github/workflows/eslint.yml
+    uses: ./.github/workflows/eslint.yml
