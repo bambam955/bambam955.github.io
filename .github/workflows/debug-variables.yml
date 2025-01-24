@@ -1,0 +1,10 @@
+on: [push, pull_request]
+
+jobs:
+  debug-variables:
+    name: Debug variables
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug
+        run: |
+          echo "testing!!"
