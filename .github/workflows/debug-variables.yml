@@ -17,4 +17,8 @@ jobs:
     steps:
       - name: Debug
         run: |
-          echo "testing!!"
+          echo "GitHub event name: ${{ github.event_name }}"
+          echo "GitHub ref: ${{ github.ref }}"
+          echo "GitHub head ref: ${{ github.head_ref }}"
+          echo "GitHub base ref: ${{ github.base_ref }}"
+      
