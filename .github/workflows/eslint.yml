@@ -10,11 +10,9 @@ on:
     branches:
       - main
       - develop
-  pull_request_target:
-    # The branches below must be a subset of the branches above
+  pull_request:
     branches:
-      - main
-      - develop
+      - '*'
 
 jobs:
   eslint:
