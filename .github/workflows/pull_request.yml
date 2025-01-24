@@ -11,9 +11,15 @@ jobs:
     name: Debug CI Variables
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/workflows/debug-variables.yml
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Debug variables
+        uses: ./.github/workflows/debug-variables.yml
   lint:
     name: Run Linter
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/workflows/eslint.yml
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run ESLint
+        uses: ./.github/workflows/eslint.yml
