@@ -10,4 +10,8 @@ jobs:
   debug_ci:
     uses: ./.github/workflows/debug-variables.yml
   lint:
+    permissions:
+      contents: read
+      security-events: write
+      actions: read # only required for a private repository by github/codeql-action/upload-sarif to get the Action run status
     uses: ./.github/workflows/eslint.yml
