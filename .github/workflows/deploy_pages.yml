@@ -7,8 +7,10 @@ on:
 jobs:
   debug_ci:
     uses: ./.github/workflows/debug_variables.yml
+
   lint:
     uses: ./.github/workflows/eslint.yml
+    
   deploy_astro_site:
     permissions:
       contents: read
