@@ -14,4 +14,4 @@ jobs:
     permissions:
       contents: read
       security-events: write
-    uses: ./.github/workflows/eslint.yml
+    uses: ./.github/workflows/lint_and_format.yml
