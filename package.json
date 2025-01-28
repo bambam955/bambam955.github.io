@@ -12,7 +12,8 @@
   },
   "lint-staged": {
     "*.{js,ts,mjs,md,mdx,astro}": [
-      "eslint --cache --fix"
+      "eslint --cache --fix",
+      "prettier --write"
     ]
   },
   "dependencies": {
