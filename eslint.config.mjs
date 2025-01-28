@@ -4,7 +4,9 @@ export default [
   ...eslintPluginAstro.configs.recommended,
   {
     files: ['**/*.{js,ts,md,mdx}'],
-    parser: '@typescript-eslint/parser', // Use TypeScript parser
+    languageOptions: {
+      parser: '@typescript-eslint/parser', // Use TypeScript parser
+    },
     plugins: [
       '@typescript-eslint', // TypeScript plugin
       'prettier', // Prettier plugin
