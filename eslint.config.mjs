@@ -1,4 +1,6 @@
 import eslintPluginAstro from 'eslint-plugin-astro';
+import typescriptEslintPlugin from 'typescript-eslint';
+import prettierPlugin from 'prettier';
 
 export default [
   ...eslintPluginAstro.configs.recommended,
@@ -7,10 +9,10 @@ export default [
     languageOptions: {
       parser: '@typescript-eslint/parser', // Use TypeScript parser
     },
-    plugins: [
-      '@typescript-eslint', // TypeScript plugin
-      'prettier', // Prettier plugin
-    ],
+    plugins: {
+      '@typescript-eslint': typescriptEslintPlugin, // TypeScript plugin
+      prettier: prettierPlugin, // Prettier plugin
+    },
     extends: [
       'eslint:recommended', // Base recommended ESLint rules
       'plugin:@typescript-eslint:recommended', // Additional recommended TypeScript rules
