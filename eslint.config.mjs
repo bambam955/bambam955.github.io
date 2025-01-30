@@ -1,7 +1,6 @@
 import eslintAstroPlugin from 'eslint-plugin-astro';
 import typescriptEslintPlugin from 'typescript-eslint';
 import prettierPlugin from 'eslint-plugin-prettier';
-
 import eslintJs from '@eslint/js';
 
 export default [
