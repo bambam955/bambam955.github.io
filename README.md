@@ -1,40 +1,29 @@
 # bambam955.github.io
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+My personal website, built using Astro.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Inspiration
 
-## 🚀 Project Structure
+I plan to build this site mostly from scratch, taking inspiration from the design and source code of the following templates and sites:
 
-Inside of your Astro project, you'll see the following folders and files:
+| Repo | Example |
+| --- | --- |
+| https://github.com/bue221/astro-portfolio | https://bue221.vercel.app/ |
+| https://github.com/tim-hub/techtim-astro-bento-portfolio | https://techtim42.com/ |
+| https://github.com/antfu/antfu.me | https://antfu.me/ |
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+There may be other sites that have useful designs too. See https://github.com/bambam955/bambam955.github.io/issues/1 for additional links.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Goals
 
-## 🧞 Commands
+I'm going to aim for a site that is sleek and minimalistic while still containing all the main features and pages that I want:
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build).
+- Home page
+- Project portfolio
+- Resume/CV
+  - Work experience
+  - Education
+  - Skills (tools, languages, etc)
+  - Downloadable PDF of my actual resume
+- Blog
+- Links to socials/profiles

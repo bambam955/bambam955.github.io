@@ -1,17 +1,15 @@
 import eslintAstroPlugin from 'eslint-plugin-astro';
-import typescriptEslintPlugin from 'typescript-eslint';
+import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin';
 import prettierPlugin from 'eslint-plugin-prettier';
 import eslintJs from '@eslint/js';
 
 export default [
+  eslintJs.configs.recommended, // Base recommended ESLint rules
   ...eslintAstroPlugin.configs.recommended,
   {
-    ...eslintJs.configs.recommended, // Base recommended ESLint rules
-    ...typescriptEslintPlugin.configs.recommended, // Additional recommended TypeScript rules
-    ...prettierPlugin.configs.recommended, // Additional Prettier rules (they won't conflict)
-    files: ['**/*.{js,ts,md,mdx}'],
+    files: ['**/*.{js,ts,astro}'],
     languageOptions: {
-      parser: '@typescript-eslint/parser', // Use TypeScript parser
+      parser: typescriptEslintPlugin.parser, // Use TypeScript parser
     },
     plugins: {
       '@typescript-eslint': typescriptEslintPlugin, // TypeScript plugin
@@ -21,6 +19,7 @@ export default [
     // Customize other rules here if needed
     rules: {
       'prettier/prettier': ['error'], // Enforce Prettier strictly
+      ...typescriptEslintPlugin.configs.recommended.rules, // Additional recommended TypeScript rules
     },
   },
 ];
