@@ -21,7 +21,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install ESLint and Prettier
-        run: npm ci
+        run: | 
+          npm install @microsoft/eslint-formatter-sarif@3.1.0
+          npm ci
 
       - name: Run ESLint
         env:
