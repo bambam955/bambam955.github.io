@@ -9,6 +9,9 @@ jobs:
     uses: ./.github/workflows/debug_variables.yml
 
   lint:
+    permissions:
+      contents: read
+      security-events: write
     uses: ./.github/workflows/lint_and_format.yml
     
   deploy_astro_site:
