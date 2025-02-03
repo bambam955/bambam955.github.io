@@ -14,6 +14,9 @@
     "*.{js,ts,mjs,astro}": [
       "eslint --cache --fix",
       "prettier --write"
+    ],
+    "*.{md,mdx}": [
+      "markdownlint --fix"
     ]
   },
   "dependencies": {
@@ -30,6 +33,7 @@
     "globals": "^15.14.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
+    "markdownlint-cli": "^0.44.0",
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1",
     "typescript": "^5.7.3",

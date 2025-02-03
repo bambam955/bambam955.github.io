@@ -25,6 +25,9 @@ jobs:
           npm install @microsoft/eslint-formatter-sarif@3.1.0
           npm ci
 
+      - name: Run Markdownlint
+        run: markdownlint --fix **/*.md **/*.mdx
+
       - name: Run ESLint
         env:
           SARIF_ESLINT_IGNORE_SUPPRESSED: "true"

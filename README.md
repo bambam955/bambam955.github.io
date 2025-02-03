@@ -1,6 +1,6 @@
 # bambam955.github.io
 
-My personal website, built using Astro.
+My personal website, built using Astro!
 
 ## Inspiration
 
@@ -8,11 +8,11 @@ I plan to build this site mostly from scratch, taking inspiration from the desig
 
 | Repo | Example |
 | --- | --- |
-| https://github.com/bue221/astro-portfolio | https://bue221.vercel.app/ |
-| https://github.com/tim-hub/techtim-astro-bento-portfolio | https://techtim42.com/ |
-| https://github.com/antfu/antfu.me | https://antfu.me/ |
+| <https://github.com/bue221/astro-portfolio> | <https://bue221.vercel.app/> |
+| <https://github.com/tim-hub/techtim-astro-bento-portfolio> | <https://techtim42.com/> |
+| <https://github.com/antfu/antfu.me> | <https://antfu.me/> |
 
-There may be other sites that have useful designs too. See https://github.com/bambam955/bambam955.github.io/issues/1 for additional links.
+There may be other sites that have useful designs too. See <https://github.com/bambam955/bambam955.github.io/issues/1> for additional links.
 
 ## Goals
 
