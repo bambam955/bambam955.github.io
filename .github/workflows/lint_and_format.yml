@@ -11,7 +11,7 @@ on:
 
 jobs:
   eslint:
-    name: Run ESLint code checks
+    name: Run linters and formatters
     runs-on: ubuntu-22.04
     permissions:
       contents: read
@@ -20,15 +20,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install ESLint and Prettier
+      - name: Install linting tools
         run: | 
           npm install @microsoft/eslint-formatter-sarif@3.1.0
           npm ci
 
-      - name: Run Markdownlint
-        run: markdownlint --fix **/*.md **/*.mdx
+      - name: Run markdownlint
+        run: npx markdownlint --fix **/*.md **/*.mdx
 
-      - name: Run ESLint
+      - name: Run eslint
         env:
           SARIF_ESLINT_IGNORE_SUPPRESSED: "true"
         run: npx eslint .
